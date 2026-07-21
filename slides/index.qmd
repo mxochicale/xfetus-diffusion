@@ -1,0 +1,221 @@
+---
+title: ""
+pagetitle: "xfetus-diffusion"
+subtitle: ""
+
+format:
+  revealjs:
+    slide-number: true
+    chalkboard:
+      buttons: true
+    controls: false
+    width: 1280
+    height: 720
+    margin: 0.025
+    controls-layout: bottom-right
+    preview-links: auto
+    logo: favicon.png
+    theme: dark
+    transition: fade
+    transition-speed: fast
+    highlight-style: github-dark
+  gfm:
+    author: Miguel Xochicale
+---
+
+
+
+# {.title-slide .centeredslide background-iframe="https://mxochicale.github.io/web-animations/" loading="lazy"}
+
+::: {style="background-color: rgba(22,22,22,0.75);
+  border-radius: 10px;
+  text-align:center;
+  padding: 0px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  line-height: 1.5em!important;"}
+
+
+<span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
+
+<!-- TODO: replace with the real talk title -->
+[Add Title]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
+
+</span>
+
+---
+
+[ [**Name Lastname**](http://name-surname.github.io/) · [Organisation](https://www.ucl.ac.uk/advanced-research-computing/)]{style="font-size:0.55em; color:#aaaaaa;"}
+
+
+:::
+
+
+::: footer
+[Q1-2026 [(web-animations 2025 by mxochicale)](https://mxochicale.github.io/web-animations/)]{.dim-text style="text-align:left;"}
+:::
+
+::: {.notes}
+<!-- TODO: add opening speaker notes -->
+:::
+
+
+
+
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
+## Overview {.smaller background-color="#0d1b2a"}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### What We'll Cover
+
+<!-- TODO: link items 3-4 to real slide anchors once those sections exist,
+     e.g. add `{#sectag_demos}` / `{#sectag_future}` to their section headers -->
+1. [**Section title 1**](#sectag_title_1) - <add details>
+2. [**Section title 2**](#sectag_title_2) - <add details>
+3. **Demonstrations** - <add details>
+4. **Future Work** - <add details>
+:::
+
+::: {.column width="50%"}
+### Key Themes
+
+<!-- TODO: replace placeholder keywords -->
+::: {.callout-note icon=false}
+## :cloud: Cloud keywords
+keyword1, keyword2, keyword3
+:::
+
+::: {.callout-tip icon=false}
+## :robot: Robotics keywords
+keyword1, keyword2, keyword3
+:::
+
+::: {.callout-important icon=false}
+## :busts_in_silhouette: Collaborative keywords
+keyword1, keyword2, keyword3
+:::
+:::
+
+::::
+
+
+
+
+
+
+
+<!-- ============================================================
+     SECTION: Section title 1
+     ============================================================ -->
+# Section title 1 {#sectag_title_1 background-color="#0d1b2a"}
+**Add Subtitle**
+
+::: {.notes}
+<!-- TODO: notes specific to Section title 1 -->
+Walk through the three layers: cloud VMs managed via Terraform/k8s,
+the campus network, and physical hardware (sensors, robots).
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template-section1}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+
+
+
+<!-- ============================================================
+     SECTION: Section title 2
+     ============================================================ -->
+# Section title 2 {#sectag_title_2 background-color="#0d1b2a"}
+**Add Subtitle**
+
+::: {.notes}
+<!-- TODO: notes specific to Section title 2 (was previously a duplicate
+     of Section title 1's notes — make sure this describes section 2) -->
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template-section2}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Title of the slide
+
+* Bullet point 1
+* Bullet point 2
+* **Bullet point** 3
+  * Bullet point 3.1
+  * Bullet point 3.2
+
+
+::: {style="font-size: 55%;"}
+**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
+**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+:::
+::: {.notes}
+Notes go here
+:::
+
+
+
+
+
+<!-- ============================================================
+     EXTRA SLIDES (appendix)
+     ============================================================ -->
+# Appendix {background-color="#111111"}
+
+Extra slides for Q&A
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## My Journey {#sec-mt .smaller}
+
+![](figures/mx.svg){fig-align="center" width="100%"}
+
+::: {.notes}
+Use this slide if asked about background — brief overview of the path
+from robotics research to ARC infrastructure work.
+:::
