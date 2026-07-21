@@ -14,7 +14,7 @@ format:
     margin: 0.025
     controls-layout: bottom-right
     preview-links: auto
-    logo: favicon.png
+    logo: favicon_uclarc.svg
     theme: dark
     transition: fade
     transition-speed: fast
