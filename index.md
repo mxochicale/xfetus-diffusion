@@ -1,0 +1,204 @@
+Miguel Xochicale
+
+# 
+
+<div style="background-color: rgba(22,22,22,0.75);   border-radius: 10px;   text-align:center;   padding: 0px;   padding-left: 1.5em;   padding-right: 1.5em;   max-width: max-content;   margin-left: auto;   margin-right: auto;   padding-top: 0.2em;   padding-bottom: 0.2em;   line-height: 1.5em!important;">
+
+<span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
+
+<!-- TODO: replace with the real talk title -->
+
+<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Add
+Title</span>
+
+</span>
+
+------------------------------------------------------------------------
+
+<span style="font-size:0.55em; color:#aaaaaa;">[**Name
+Lastname**](http://name-surname.github.io/) ·
+[Organisation](https://www.ucl.ac.uk/advanced-research-computing/)</span>
+
+</div>
+
+<div class="footer">
+
+<span class="dim-text" style="text-align:left;">Q1-2026 [(web-animations
+2025 by
+mxochicale)](https://mxochicale.github.io/web-animations/)</span>
+
+</div>
+
+<div class="notes">
+
+<!-- TODO: add opening speaker notes -->
+
+</div>
+
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
+
+## Overview
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+### What We’ll Cover
+
+<!-- TODO: link items 3-4 to real slide anchors once those sections exist,
+     e.g. add `{#sectag_demos}` / `{#sectag_future}` to their section headers -->
+
+1.  [**Section title 1**](#sectag_title_1) - <add details>
+2.  [**Section title 2**](#sectag_title_2) - <add details>
+3.  **Demonstrations** - <add details>
+4.  **Future Work** - <add details>
+
+</div>
+
+<div class="column" width="50%">
+
+### Key Themes
+
+<!-- TODO: replace placeholder keywords -->
+
+> [!NOTE]
+>
+> ### :cloud: Cloud keywords
+>
+> keyword1, keyword2, keyword3
+
+> [!TIP]
+>
+> ### :robot: Robotics keywords
+>
+> keyword1, keyword2, keyword3
+
+> [!IMPORTANT]
+>
+> ### :busts_in_silhouette: Collaborative keywords
+>
+> keyword1, keyword2, keyword3
+
+</div>
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section title 1
+     ============================================================ -->
+
+# Section title 1
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section title 1 -->
+
+Walk through the three layers: cloud VMs managed via Terraform/k8s, the
+campus network, and physical hardware (sensors, robots).
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section1">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 1: Getting started documentation provide with a range of links to
+setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section title 2
+     ============================================================ -->
+
+# Section title 2
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section title 2 (was previously a duplicate
+     of Section title 1's notes — make sure this describes section 2) -->
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section2">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 2: Getting started documentation provide with a range of links to
+setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Title of the slide
+
+- Bullet point 1
+- Bullet point 2
+- **Bullet point** 3
+  - Bullet point 3.1
+  - Bullet point 3.2
+
+<div style="font-size: 55%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+
+</div>
+
+<div class="notes">
+
+Notes go here
+
+</div>
+
+<!-- ============================================================
+     EXTRA SLIDES (appendix)
+     ============================================================ -->
+
+# Appendix
+
+Extra slides for Q&A
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## My Journey
+
+<img src="figures/mx.svg" style="width:100.0%"
+data-fig-align="center" />
+
+<div class="notes">
+
+Use this slide if asked about background — brief overview of the path
+from robotics research to ARC infrastructure work.
+
+</div>
