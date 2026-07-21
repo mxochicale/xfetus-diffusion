@@ -69,13 +69,13 @@ git push origin gh-pages
 git checkout main
 #https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/
 ```
-* Go to Seetings/Pages and Select `Deploy from a branch` and select `gh-pages` branch
+* Go to Seetings/Pages and Select `Deploy from a branch` and select `gh-pages` branch (`/root` path)
 
 
 ## Push changes and publish slides
 ```bash
 git add .
-git commmit -m '<add message> CI #ISSUE_NUMBER'
+git commit -m '<add message> CI #ISSUE_NUMBER'
 git push origin <feature_branch>
 ```
 
