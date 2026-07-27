@@ -176,29 +176,123 @@ Speaker notes go here.
      SECTION: Section 2
      ============================================================ -->
 # EDM2 diffusion model {#secDM background-color="#0d1b2a"}
-**Add Subtitle**
+Elucidating the Design Space of Diffusion Models, version 2     
+Harvey Mannering
 
 ::: {.notes}
 <!-- TODO: notes specific to Section title 1 -->
-Walk through the three layers: cloud VMs managed via Terraform/k8s,
-the campus network, and physical hardware (sensors, robots).
+
+
+Gigaflops per evaluation measures computational efficiency 
+by tracking how many billions of floating-point math calculations (gigaflops) 
+a computer processor uses to test, score, 
+or run a single trial (evaluation) in an algorithm or model.
+
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## What Are Diffusion Models? {style="font-size: 70%;"}
+
+
+::: {#fig-template-section1}
+
+![](figures/diffusion_models.svg){fig-align=center}
+
+Overview of different types of generative models. (Source: [Lil’Log](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/))
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+
+https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+https://toloka.ai/blog/unveiling-the-dynamics/
+
+:::
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## EDM2: Record quality at fraction of training time {style="font-size: 70%;"}
+
+
+::: {#fig-template-section1}
+
+![](figures/edm2_fig1.svg){fig-align=center}
+
+Figure 1 from Kerras et al. 2024 in CVPR.
+:::
+
+::: {.notes}
+Speaker notes go here.
+
+PAPER: https://arxiv.org/pdf/2312.02696
+POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235
+
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## EDM2 Architecture {style="font-size: 70%;"}
+
+
+::: {#fig-template-section1}
+
+![](figures/edm2_fig2.svg){fig-align=center}
+
+Figure 2 EDM2 Architecture combines a U-Net with self-attention layers (Kerras et al. 2024 in CVPR).
+:::
+
+::: {.notes}
+Speaker notes go here.
+
+PAPER: https://arxiv.org/pdf/2312.02696
+POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235
+
 :::
 
 
 
 <!-- *********************** NEW SLIDE *********************** -->
-## {{< fa brands github >}} Github: Getting started docs
+## EDM2 Results {style="font-size: 70%;"}
+
 
 ::: {#fig-template-section1}
 
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+![](figures/edm2_table2.svg){fig-align=center}
 
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Table 2. Results on ImageNet-512. “EDM2-S” is the same as CONFIG G in Table 1 (Kerras et al. 2024 in CVPR).
 :::
 
 ::: {.notes}
 Speaker notes go here.
+
+
+PAPER: https://arxiv.org/pdf/2312.02696
+POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235
+
+
+TODO
+
+* OUR PAPER
+We train two different
+sized networks, EDM2-S and EDM2-XL, which allows us to apply autoguidance
+[14] to improve image quality.
+
+* KERAS2024:
+In our tests, the smallest
+(XS) unconditional model was found to be sufficient for
+guiding even the largest (XXL) conditional model — using a
+larger unconditional model did not improve the results at all.
+
 :::
+
+
+
 
 
 
