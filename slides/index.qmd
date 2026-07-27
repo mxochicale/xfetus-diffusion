@@ -44,13 +44,14 @@ format:
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
 <!-- TODO: replace with the real talk title -->
-[Add Title]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
+[Foundation Diffusion Model with 
+Open-Source Medical Imaging in Unified-AI]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
 
 </span>
 
 ---
 
-[ [**Name Lastname**](http://name-surname.github.io/) · [Organisation](https://www.ucl.ac.uk/advanced-research-computing/)]{style="font-size:0.55em; color:#aaaaaa;"}
+[ [**Miguel Xochicale ( {{< fa brands github >}}  @mxochicale) **](https://github.com/mxochicale), Senior RSE, [UCL-ARC](https://www.ucl.ac.uk/advanced-research-computing/)]{style="font-size:0.55em; color:#aaaaaa;"}
 
 
 :::
@@ -76,17 +77,31 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-### What We'll Cover
 
 <!-- TODO: link items 3-4 to real slide anchors once those sections exist,
      e.g. add `{#sectag_demos}` / `{#sectag_future}` to their section headers -->
-1. [**Section title 1**](#sectag_title_1) - <add details>
-2. [**Section title 2**](#sectag_title_2) - <add details>
-3. **Demonstrations** - <add details>
-4. **Future Work** - <add details>
+* [My journey](#secMJ)
+* [Prenatal ultrasound (US) Imaging](#secUS) <add details>
+* [EDM2 diffusion model](#secDM) <add details>
+* [Image Quality Assessment](#secIQ) <add details>
+* [Unified-AI](#secUAI) <add details>
+* [Future Work](#secFW) <add details>
 :::
 
 ::: {.column width="50%"}
+
+:::
+
+::::
+
+
+
+::: {.notes}
+<!-- TODO: add key themes -->
+
+### What We'll Cover
+
+
 ### Key Themes
 
 <!-- TODO: replace placeholder keywords -->
@@ -104,10 +119,24 @@ keyword1, keyword2, keyword3
 ## :busts_in_silhouette: Collaborative keywords
 keyword1, keyword2, keyword3
 :::
+
 :::
 
-::::
 
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## My Journey {#secMJ .smaller}
+
+![](figures/mx.png){fig-align="center" width="100%"}
+
+::: {.notes}
+To update figure go to: 
+https://github.com/mxochicale/cv/tree/main/my-journey
+
+:::
 
 
 
@@ -115,9 +144,38 @@ keyword1, keyword2, keyword3
 
 
 <!-- ============================================================
-     SECTION: Section title 1
+     SECTION: Section 1
      ============================================================ -->
-# Section title 1 {#sectag_title_1 background-color="#0d1b2a"}
+# Prenatal ultrasound (US) Imaging {#secUS background-color="#0d1b2a"}
+**Add Subtitle**
+
+::: {.notes}
+<!-- TODO: notes specific to Section title 1 -->
+Walk through the three layers: cloud VMs managed via Terraform/k8s,
+the campus network, and physical hardware (sensors, robots).
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template-section1}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+<!-- ============================================================
+     SECTION: Section 2
+     ============================================================ -->
+# EDM2 diffusion model {#secDM background-color="#0d1b2a"}
 **Add Subtitle**
 
 ::: {.notes}
@@ -146,12 +204,71 @@ Speaker notes go here.
 
 
 
+<!-- ============================================================
+     SECTION: Section 3
+     ============================================================ -->
+# Image Quality Assessment {#secIQ background-color="#0d1b2a"}
+**Add Subtitle**
+
+::: {.notes}
+<!-- TODO: notes specific to Section title 1 -->
+Walk through the three layers: cloud VMs managed via Terraform/k8s,
+the campus network, and physical hardware (sensors, robots).
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template-section1}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
 
 
 <!-- ============================================================
-     SECTION: Section title 2
+     SECTION: Section 4
      ============================================================ -->
-# Section title 2 {#sectag_title_2 background-color="#0d1b2a"}
+# Unified-AI {#secUAI background-color="#0d1b2a"}
+**Add Subtitle**
+
+::: {.notes}
+<!-- TODO: notes specific to Section title 1 -->
+Walk through the three layers: cloud VMs managed via Terraform/k8s,
+the campus network, and physical hardware (sensors, robots).
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template-section1}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+<!-- ============================================================
+     SECTION: Section 5
+     ============================================================ -->
+# Future Work {#secFW background-color="#0d1b2a"}
 **Add Subtitle**
 
 ::: {.notes}
@@ -208,14 +325,23 @@ Notes go here
 Extra slides for Q&A
 
 
-
 <!-- *********************** NEW SLIDE *********************** -->
+## Title of the slide
 
-## My Journey {#sec-mt .smaller}
+* Bullet point 1
+* Bullet point 2
+* **Bullet point** 3
+  * Bullet point 3.1
+  * Bullet point 3.2
 
-![](figures/mx.svg){fig-align="center" width="100%"}
 
-::: {.notes}
-Use this slide if asked about background — brief overview of the path
-from robotics research to ARC infrastructure work.
+::: {style="font-size: 55%;"}
+**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
+**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
 :::
+::: {.notes}
+Notes go here
+:::
+
+
+
