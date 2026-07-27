@@ -8,16 +8,16 @@ Miguel Xochicale
 
 <!-- TODO: replace with the real talk title -->
 
-<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Add
-Title</span>
+<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Foundation
+Diffusion Model with Open-Source Medical Imaging in Unified-AI</span>
 
 </span>
 
 ------------------------------------------------------------------------
 
-<span style="font-size:0.55em; color:#aaaaaa;">[**Name
-Lastname**](http://name-surname.github.io/) ·
-[Organisation](https://www.ucl.ac.uk/advanced-research-computing/)</span>
+<span style="font-size:0.55em; color:#aaaaaa;">[**Miguel Xochicale (
+@mxochicale)** ](https://github.com/mxochicale), Senior RSE,
+[UCL-ARC](https://www.ucl.ac.uk/advanced-research-computing/)</span>
 
 </div>
 
@@ -45,19 +45,29 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 
 <div class="column" width="50%">
 
-### What We’ll Cover
-
 <!-- TODO: link items 3-4 to real slide anchors once those sections exist,
      e.g. add `{#sectag_demos}` / `{#sectag_future}` to their section headers -->
 
-1.  [**Section title 1**](#sectag_title_1) - <add details>
-2.  [**Section title 2**](#sectag_title_2) - <add details>
-3.  **Demonstrations** - <add details>
-4.  **Future Work** - <add details>
+- [My journey](#secMJ)
+- [Prenatal ultrasound (US) Imaging](#secUS) <add details>
+- [EDM2 diffusion model](#secDM) <add details>
+- [Image Quality Assessment](#secIQ) <add details>
+- [Unified-AI](#secUAI) <add details>
+- [Future Work](#secFW) <add details>
 
 </div>
 
 <div class="column" width="50%">
+
+</div>
+
+</div>
+
+<div class="notes">
+
+<!-- TODO: add key themes -->
+
+### What We’ll Cover
 
 ### Key Themes
 
@@ -83,13 +93,25 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 
 </div>
 
+<!-- *********************** NEW SLIDE *********************** -->
+
+## My Journey
+
+<img src="figures/mx.png" style="width:100.0%"
+data-fig-align="center" />
+
+<div class="notes">
+
+To update figure go to:
+https://github.com/mxochicale/cv/tree/main/my-journey
+
 </div>
 
 <!-- ============================================================
-     SECTION: Section title 1
+     SECTION: Section 1
      ============================================================ -->
 
-# Section title 1
+# Prenatal ultrasound (US) Imaging
 
 **Add Subtitle**
 
@@ -123,10 +145,121 @@ Speaker notes go here.
 </div>
 
 <!-- ============================================================
-     SECTION: Section title 2
+     SECTION: Section 2
      ============================================================ -->
 
-# Section title 2
+# EDM2 diffusion model
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section title 1 -->
+
+Walk through the three layers: cloud VMs managed via Terraform/k8s, the
+campus network, and physical hardware (sensors, robots).
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section1">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 2: Getting started documentation provide with a range of links to
+setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section 3
+     ============================================================ -->
+
+# Image Quality Assessment
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section title 1 -->
+
+Walk through the three layers: cloud VMs managed via Terraform/k8s, the
+campus network, and physical hardware (sensors, robots).
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section1">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 3: Getting started documentation provide with a range of links to
+setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section 4
+     ============================================================ -->
+
+# Unified-AI
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section title 1 -->
+
+Walk through the three layers: cloud VMs managed via Terraform/k8s, the
+campus network, and physical hardware (sensors, robots).
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section1">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 4: Getting started documentation provide with a range of links to
+setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section 5
+     ============================================================ -->
+
+# Future Work
 
 **Add Subtitle**
 
@@ -146,7 +279,7 @@ Speaker notes go here.
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 2: Getting started documentation provide with a range of links to
+Figure 5: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -191,14 +324,24 @@ Extra slides for Q&A
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-## My Journey
+## Title of the slide
 
-<img src="figures/mx.svg" style="width:100.0%"
-data-fig-align="center" />
+- Bullet point 1
+- Bullet point 2
+- **Bullet point** 3
+  - Bullet point 3.1
+  - Bullet point 3.2
+
+<div style="font-size: 55%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+
+</div>
 
 <div class="notes">
 
-Use this slide if asked about background — brief overview of the path
-from robotics research to ARC infrastructure work.
+Notes go here
 
 </div>

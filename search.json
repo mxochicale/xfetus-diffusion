@@ -4,7 +4,14 @@
     "href": "index.html#overview",
     "title": "",
     "section": "Overview",
-    "text": "Overview\n\n\nWhat We’ll Cover\n\n\nSection title 1 - \nSection title 2 - \nDemonstrations - \nFuture Work - \n\n\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
+    "text": "Overview\n\n\n\n\nMy journey\nPrenatal ultrasound (US) Imaging \nEDM2 diffusion model \nImage Quality Assessment \nUnified-AI \nFuture Work \n\n\n\n\n\n\nWhat We’ll Cover\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
+  },
+  {
+    "objectID": "index.html#secMJ",
+    "href": "index.html#secMJ",
+    "title": "",
+    "section": "My Journey",
+    "text": "My Journey\n\n\nTo update figure go to: https://github.com/mxochicale/cv/tree/main/my-journey"
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs",
@@ -21,6 +28,27 @@
     "text": "Github: Getting started docs\n\n\nFigure 2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "title": "",
+    "section": " Github: Getting started docs",
+    "text": "Github: Getting started docs\n\n\nFigure 3: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
+    "title": "",
+    "section": " Github: Getting started docs",
+    "text": "Github: Getting started docs\n\n\nFigure 4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4",
+    "title": "",
+    "section": " Github: Getting started docs",
+    "text": "Github: Getting started docs\n\n\nFigure 5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
     "objectID": "index.html#title-of-the-slide",
     "href": "index.html#title-of-the-slide",
     "title": "",
@@ -28,10 +56,10 @@
     "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
   },
   {
-    "objectID": "index.html#sec-mt",
-    "href": "index.html#sec-mt",
+    "objectID": "index.html#title-of-the-slide-1",
+    "href": "index.html#title-of-the-slide-1",
     "title": "",
-    "section": "My Journey",
-    "text": "My Journey\n\n\nUse this slide if asked about background — brief overview of the path from robotics research to ARC infrastructure work."
+    "section": "Title of the slide",
+    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
   }
 ]

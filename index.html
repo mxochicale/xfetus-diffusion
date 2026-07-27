@@ -7,10 +7,10 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6b6957c917596b414ec0b78690761e87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a1953863e1f72ef3b996ef827f01ca7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+  <meta name="generator" content="quarto-1.10.18">
 
   <title>xfetus-diffusion</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -148,10 +151,10 @@
 <div style="background-color: rgba(22,22,22,0.75);   border-radius: 10px;   text-align:center;   padding: 0px;   padding-left: 1.5em;   padding-right: 1.5em;   max-width: max-content;   margin-left: auto;   margin-right: auto;   padding-top: 0.2em;   padding-bottom: 0.2em;   line-height: 1.5em!important;">
 <p><span style="color:#939393; font-size:1.75em; text-align:left; display:block;"></span></p>
 <!-- TODO: replace with the real talk title -->
-<p><span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Add Title</span></p>
+<p><span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Foundation Diffusion Model with Open-Source Medical Imaging in Unified-AI</span></p>
 <p></p>
 <hr>
-<p><span style="font-size:0.55em; color:#aaaaaa;"><a href="http://name-surname.github.io/"><strong>Name Lastname</strong></a> · <a href="https://www.ucl.ac.uk/advanced-research-computing/">Organisation</a></span></p>
+<p><span style="font-size:0.55em; color:#aaaaaa;"><a href="https://github.com/mxochicale"><strong>Miguel Xochicale ( <i class="fa-brands fa-github" aria-label="github"></i> <span class="citation" data-cites="mxochicale">@mxochicale</span>) </strong></a>, Senior RSE, <a href="https://www.ucl.ac.uk/advanced-research-computing/">UCL-ARC</a></span></p>
 </div>
 <div class="footer">
 <p><span class="dim-text" style="text-align:left;">Q1-2026 <a href="https://mxochicale.github.io/web-animations/">(web-animations 2025 by mxochicale)</a></span></p>
@@ -177,16 +180,22 @@
 <h2>Overview</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="what-well-cover">What We’ll Cover</h3>
 <!-- TODO: link items 3-4 to real slide anchors once those sections exist,
      e.g. add `{#sectag_demos}` / `{#sectag_future}` to their section headers -->
-<ol type="1">
-<li><a href="#/sectag_title_1"><strong>Section title 1</strong></a> - <add details=""></add></li>
-<li><a href="#/sectag_title_2"><strong>Section title 2</strong></a> - <add details=""></add></li>
-<li><strong>Demonstrations</strong> - <add details=""></add></li>
-<li><strong>Future Work</strong> - <add details=""></add></li>
-</ol>
+<ul>
+<li><a href="#/secMJ">My journey</a></li>
+<li><a href="#/secUS">Prenatal ultrasound (US) Imaging</a> <add details=""></add></li>
+<li><a href="#/secDM">EDM2 diffusion model</a> <add details=""></add></li>
+<li><a href="#/secIQ">Image Quality Assessment</a> <add details=""></add></li>
+<li><a href="#/secUAI">Unified-AI</a> <add details=""></add></li>
+<li><a href="#/secFW">Future Work</a> <add details=""></add></li>
+</ul>
 </div><div class="column" style="width:50%;">
+
+</div></div>
+<aside class="notes">
+<!-- TODO: add key themes -->
+<h3 id="what-well-cover">What We’ll Cover</h3>
 <h3 id="key-themes">Key Themes</h3>
 <!-- TODO: replace placeholder keywords -->
 <div class="callout callout-note no-icon callout-titled callout-style-default">
@@ -219,14 +228,42 @@
 </div>
 </div>
 </div>
-</div></div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="secMJ" class="slide level2 smaller">
+<h2>My Journey</h2>
+
+<img data-src="figures/mx.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
+<p>To update figure go to: https://github.com/mxochicale/cv/tree/main/my-journey</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!-- ============================================================
-     SECTION: Section title 1
+     SECTION: Section 1
      ============================================================ -->
 </section></section>
 <section>
-<section id="sectag_title_1" class="title-slide slide level1 center" data-background-color="#0d1b2a">
-<h1>Section title 1</h1>
+<section id="secUS" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>Prenatal ultrasound (US) Imaging</h1>
 <p><strong>Add Subtitle</strong></p>
 <aside class="notes">
 <!-- TODO: notes specific to Section title 1 -->
@@ -263,12 +300,138 @@ Figure&nbsp;1: Getting started documentation provide with a range of links to se
           display:block!important;
       }</style></aside>
 <!-- ============================================================
-     SECTION: Section title 2
+     SECTION: Section 2
      ============================================================ -->
 </section></section>
 <section>
-<section id="sectag_title_2" class="title-slide slide level1 center" data-background-color="#0d1b2a">
-<h1>Section title 2</h1>
+<section id="secDM" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>EDM2 diffusion model</h1>
+<p><strong>Add Subtitle</strong></p>
+<aside class="notes">
+<!-- TODO: notes specific to Section title 1 -->
+<p>Walk through the three layers: cloud VMs managed via Terraform/k8s, the campus network, and physical hardware (sensors, robots).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2">
+<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
+
+<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ============================================================
+     SECTION: Section 3
+     ============================================================ -->
+</section></section>
+<section>
+<section id="secIQ" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>Image Quality Assessment</h1>
+<p><strong>Add Subtitle</strong></p>
+<aside class="notes">
+<!-- TODO: notes specific to Section title 1 -->
+<p>Walk through the three layers: cloud VMs managed via Terraform/k8s, the campus network, and physical hardware (sensors, robots).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2" class="slide level2">
+<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
+
+<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;3: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ============================================================
+     SECTION: Section 4
+     ============================================================ -->
+</section></section>
+<section>
+<section id="secUAI" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>Unified-AI</h1>
+<p><strong>Add Subtitle</strong></p>
+<aside class="notes">
+<!-- TODO: notes specific to Section title 1 -->
+<p>Walk through the three layers: cloud VMs managed via Terraform/k8s, the campus network, and physical hardware (sensors, robots).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3" class="slide level2">
+<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
+
+<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ============================================================
+     SECTION: Section 5
+     ============================================================ -->
+</section></section>
+<section>
+<section id="secFW" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>Future Work</h1>
 <p><strong>Add Subtitle</strong></p>
 <aside class="notes">
 <!-- TODO: notes specific to Section title 2 (was previously a duplicate
@@ -286,11 +449,11 @@ Figure&nbsp;1: Getting started documentation provide with a range of links to se
       }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4" class="slide level2">
 <h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
 
 <img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section2"><p class="caption">
-Figure&nbsp;2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
@@ -343,11 +506,22 @@ Figure&nbsp;2: Getting started documentation provide with a range of links to se
 <p>Extra slides for Q&amp;A</p>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="sec-mt" class="slide level2 smaller">
-<h2>My Journey</h2>
-
-<img data-src="figures/mx.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
-<p>Use this slide if asked about background — brief overview of the path from robotics research to ARC infrastructure work.</p>
+<section id="title-of-the-slide-1" class="slide level2">
+<h2>Title of the slide</h2>
+<ul>
+<li>Bullet point 1</li>
+<li>Bullet point 2</li>
+<li><strong>Bullet point</strong> 3
+<ul>
+<li>Bullet point 3.1</li>
+<li>Bullet point 3.2</li>
+</ul></li>
+</ul>
+<div style="font-size: 55%;">
+<p><strong>Sciortino et al.&nbsp;2017</strong> in Computers in Biology and Medicine <a href="https://doi.org/10.1016/j.compbiomed.2017.01.008" class="uri">https://doi.org/10.1016/j.compbiomed.2017.01.008</a> <strong>He et al.&nbsp;2021</strong> in Front. Med. <a href="https://doi.org/10.3389/fmed.2021.729978" class="uri">https://doi.org/10.3389/fmed.2021.729978</a></p>
+</div>
+<aside class="notes">
+<p>Notes go here</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
