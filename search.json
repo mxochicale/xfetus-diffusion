@@ -49,25 +49,32 @@
     "text": "EDM2 Results\n\n\nFigure 5: Table 2. Results on ImageNet-512. “EDM2-S” is the same as CONFIG G in Table 1 (Kerras et al. 2024 in CVPR).\n\nSpeaker notes go here.\nPAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235\nTODO\n\nOUR PAPER We train two different sized networks, EDM2-S and EDM2-XL, which allows us to apply autoguidance [14] to improve image quality.\nKERAS2024: In our tests, the smallest (XS) unconditional model was found to be sufficient for guiding even the largest (XXL) conditional model — using a larger unconditional model did not improve the results at all."
   },
   {
+    "objectID": "index.html#fréchet-inception-distance-fid-score",
+    "href": "index.html#fréchet-inception-distance-fid-score",
+    "title": "",
+    "section": "Fréchet Inception Distance (FID) Score",
+    "text": "Fréchet Inception Distance (FID) Score\n\nQuaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance between distributions of synthetised and original images (Heusel et al., 2017).\nThe lower the FID number is, the more similar the synthetised images are to the original ones. FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).\n\n\n\nFigure 6: Table 2. Results from Diffusion-Super-resolution-GAN (DSR-GAN) and transformer- based-GAN (TB-GAN): (Bautista et al. 2023 in MIDL).\n\nHeusel et al. 2017 in NIPS’17 https://dl.acm.org/doi/10.5555/3295222.3295408 Bautista et al. 2023 in MIDL https://github.com/xfetus/midl2023\n\n\nNotes go here"
+  },
+  {
+    "objectID": "index.html#clinical-evaluation",
+    "href": "index.html#clinical-evaluation",
+    "title": "",
+    "section": "Clinical evaluation",
+    "text": "Clinical evaluation\n\nQ1. Is this image real or synthetic?\nQ2. Rate clinical image quality (1 = poor, 5 = excellent)\n\n\n\nFigure 7: Survey https://xfetus.github.io/fetal-ultrasound-edm2-survey-2026\n\nMannering et al. 2026 in MIUA’26 https://xfetus.github.io/fetal-ultrasound-edm2-survey-2026\n\n\nNotes go here"
+  },
+  {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 6: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 8: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 7: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
-    "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 8: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 9: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#title-of-the-slide",
@@ -82,5 +89,12 @@
     "title": "",
     "section": "Title of the slide",
     "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
+    "title": "",
+    "section": " Github: Getting started docs",
+    "text": "Github: Getting started docs\n\n\nFigure 10: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   }
 ]

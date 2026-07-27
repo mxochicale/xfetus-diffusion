@@ -267,34 +267,73 @@ TODO
 
 # Image Quality Assessment
 
-**Add Subtitle**
-
 <div class="notes">
 
-<!-- TODO: notes specific to Section title 1 -->
-
-Walk through the three layers: cloud VMs managed via Terraform/k8s, the
-campus network, and physical hardware (sensors, robots).
+<!-- TODO: notes specific to Section 3-->
 
 </div>
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-##  Github: Getting started docs
+## Fréchet Inception Distance (FID) Score
 
-<div id="fig-template-section1">
+- Quaility of synthesised images are evaluated with Frechet inception
+  distance (FID), measuring the distance between distributions of
+  synthetised and original images (Heusel et al., 2017).
+- The lower the FID number is, the more similar the synthetised images
+  are to the original ones. FID metric showed to work well with fetal
+  head US compared to other metrics (Bautista et al., 2012).
 
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-data-fig-align="center" />
+<div id="fig-bautista2023_fig1">
 
-Figure 6: Getting started documentation provide with a range of links to
-setup, use, run and debug application including github workflow.
+<img src="figures/bautista2023_fig1.svg" data-fig-align="center" />
+
+Figure 6: Table 2. Results from Diffusion-Super-resolution-GAN (DSR-GAN)
+and transformer- based-GAN (TB-GAN): (Bautista et al. 2023 in MIDL).
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Heusel et al. 2017** in NIPS’17
+<https://dl.acm.org/doi/10.5555/3295222.3295408> **Bautista et
+al. 2023** in MIDL <https://github.com/xfetus/midl2023>
 
 </div>
 
 <div class="notes">
 
-Speaker notes go here.
+Notes go here
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Clinical evaluation
+
+- Q1. Is this image real or synthetic?
+- Q2. Rate clinical image quality (1 = poor, 5 = excellent)
+
+<div id="fig-bautista2023_fig1">
+
+<img src="figures/ManneringXochicale_survey.svg"
+data-fig-align="center" />
+
+Figure 7: Survey
+<https://xfetus.github.io/fetal-ultrasound-edm2-survey-2026>
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Mannering et al. 2026** in MIUA’26
+<https://xfetus.github.io/fetal-ultrasound-edm2-survey-2026>
+
+</div>
+
+<div class="notes">
+
+Notes go here
 
 </div>
 
@@ -324,7 +363,7 @@ campus network, and physical hardware (sensors, robots).
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 7: Getting started documentation provide with a range of links to
+Figure 8: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -359,7 +398,7 @@ Speaker notes go here.
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 8: Getting started documentation provide with a range of links to
+Figure 9: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -423,5 +462,25 @@ Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
 <div class="notes">
 
 Notes go here
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section1">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 10: Getting started documentation provide with a range of links
+to setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
 
 </div>
