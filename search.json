@@ -21,32 +21,53 @@
     "text": "Github: Getting started docs\n\n\nFigure 1: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
+    "objectID": "index.html#what-are-diffusion-models",
+    "href": "index.html#what-are-diffusion-models",
+    "title": "",
+    "section": "What Are Diffusion Models?",
+    "text": "What Are Diffusion Models?\n\n\nFigure 2: Overview of different types of generative models. (Source: Lil’Log)\n\nSpeaker notes go here.\nhttps://lilianweng.github.io/posts/2021-07-11-diffusion-models/ https://toloka.ai/blog/unveiling-the-dynamics/"
+  },
+  {
+    "objectID": "index.html#edm2-record-quality-at-fraction-of-training-time",
+    "href": "index.html#edm2-record-quality-at-fraction-of-training-time",
+    "title": "",
+    "section": "EDM2: Record quality at fraction of training time",
+    "text": "EDM2: Record quality at fraction of training time\n\n\nFigure 3: Figure 1 from Kerras et al. 2024 in CVPR.\n\nSpeaker notes go here.\nPAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235"
+  },
+  {
+    "objectID": "index.html#edm2-architecture",
+    "href": "index.html#edm2-architecture",
+    "title": "",
+    "section": "EDM2 Architecture",
+    "text": "EDM2 Architecture\n\n\nFigure 4: Figure 2 EDM2 Architecture combines a U-Net with self-attention layers (Kerras et al. 2024 in CVPR).\n\nSpeaker notes go here.\nPAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235"
+  },
+  {
+    "objectID": "index.html#edm2-results",
+    "href": "index.html#edm2-results",
+    "title": "",
+    "section": "EDM2 Results",
+    "text": "EDM2 Results\n\n\nFigure 5: Table 2. Results on ImageNet-512. “EDM2-S” is the same as CONFIG G in Table 1 (Kerras et al. 2024 in CVPR).\n\nSpeaker notes go here.\nPAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235\nTODO\n\nOUR PAPER We train two different sized networks, EDM2-S and EDM2-XL, which allows us to apply autoguidance [14] to improve image quality.\nKERAS2024: In our tests, the smallest (XS) unconditional model was found to be sufficient for guiding even the largest (XXL) conditional model — using a larger unconditional model did not improve the results at all."
+  },
+  {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 6: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 3: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 7: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4",
-    "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 8: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#title-of-the-slide",

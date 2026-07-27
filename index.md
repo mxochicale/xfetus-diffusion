@@ -150,34 +150,114 @@ Speaker notes go here.
 
 # EDM2 diffusion model
 
-**Add Subtitle**
+Elucidating the Design Space of Diffusion Models, version 2\
+Harvey Mannering
 
 <div class="notes">
 
 <!-- TODO: notes specific to Section title 1 -->
 
-Walk through the three layers: cloud VMs managed via Terraform/k8s, the
-campus network, and physical hardware (sensors, robots).
+Gigaflops per evaluation measures computational efficiency by tracking
+how many billions of floating-point math calculations (gigaflops) a
+computer processor uses to test, score, or run a single trial
+(evaluation) in an algorithm or model.
 
 </div>
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-##  Github: Getting started docs
+## What Are Diffusion Models?
 
 <div id="fig-template-section1">
 
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-data-fig-align="center" />
+<img src="figures/diffusion_models.svg" data-fig-align="center" />
 
-Figure 2: Getting started documentation provide with a range of links to
-setup, use, run and debug application including github workflow.
+Figure 2: Overview of different types of generative models. (Source:
+[Lil’Log](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/))
 
 </div>
 
 <div class="notes">
 
 Speaker notes go here.
+
+https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+https://toloka.ai/blog/unveiling-the-dynamics/
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## EDM2: Record quality at fraction of training time
+
+<div id="fig-template-section1">
+
+<img src="figures/edm2_fig1.svg" data-fig-align="center" />
+
+Figure 3: Figure 1 from Kerras et al. 2024 in CVPR.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+PAPER: https://arxiv.org/pdf/2312.02696 POSTER:
+https://cvpr.thecvf.com/virtual/2024/poster/31235
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## EDM2 Architecture
+
+<div id="fig-template-section1">
+
+<img src="figures/edm2_fig2.svg" data-fig-align="center" />
+
+Figure 4: Figure 2 EDM2 Architecture combines a U-Net with
+self-attention layers (Kerras et al. 2024 in CVPR).
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+PAPER: https://arxiv.org/pdf/2312.02696 POSTER:
+https://cvpr.thecvf.com/virtual/2024/poster/31235
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## EDM2 Results
+
+<div id="fig-template-section1">
+
+<img src="figures/edm2_table2.svg" data-fig-align="center" />
+
+Figure 5: Table 2. Results on ImageNet-512. “EDM2-S” is the same as
+CONFIG G in Table 1 (Kerras et al. 2024 in CVPR).
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+PAPER: https://arxiv.org/pdf/2312.02696 POSTER:
+https://cvpr.thecvf.com/virtual/2024/poster/31235
+
+TODO
+
+- OUR PAPER We train two different sized networks, EDM2-S and EDM2-XL,
+  which allows us to apply autoguidance \[14\] to improve image quality.
+
+- KERAS2024: In our tests, the smallest (XS) unconditional model was
+  found to be sufficient for guiding even the largest (XXL) conditional
+  model — using a larger unconditional model did not improve the results
+  at all.
 
 </div>
 
@@ -207,7 +287,7 @@ campus network, and physical hardware (sensors, robots).
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 3: Getting started documentation provide with a range of links to
+Figure 6: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -244,7 +324,7 @@ campus network, and physical hardware (sensors, robots).
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 4: Getting started documentation provide with a range of links to
+Figure 7: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -279,7 +359,7 @@ Speaker notes go here.
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 5: Getting started documentation provide with a range of links to
+Figure 8: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>

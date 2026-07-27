@@ -306,10 +306,11 @@ Figure&nbsp;1: Getting started documentation provide with a range of links to se
 <section>
 <section id="secDM" class="title-slide slide level1 center" data-background-color="#0d1b2a">
 <h1>EDM2 diffusion model</h1>
-<p><strong>Add Subtitle</strong></p>
+<p>Elucidating the Design Space of Diffusion Models, version 2<br>
+Harvey Mannering</p>
 <aside class="notes">
 <!-- TODO: notes specific to Section title 1 -->
-<p>Walk through the three layers: cloud VMs managed via Terraform/k8s, the campus network, and physical hardware (sensors, robots).</p>
+<p>Gigaflops per evaluation measures computational efficiency by tracking how many billions of floating-point math calculations (gigaflops) a computer processor uses to test, score, or run a single trial (evaluation) in an algorithm or model.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -323,13 +324,82 @@ Figure&nbsp;1: Getting started documentation provide with a range of links to se
       }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2">
-<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
+<section id="what-are-diffusion-models" class="slide level2" style="font-size: 70%;">
+<h2>What Are Diffusion Models?</h2>
 
-<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
-Figure&nbsp;2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+<img data-src="figures/diffusion_models.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;2: Overview of different types of generative models. (Source: <a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/">Lil’Log</a>)
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
+<p>https://lilianweng.github.io/posts/2021-07-11-diffusion-models/ https://toloka.ai/blog/unveiling-the-dynamics/</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="edm2-record-quality-at-fraction-of-training-time" class="slide level2" style="font-size: 70%;">
+<h2>EDM2: Record quality at fraction of training time</h2>
+
+<img data-src="figures/edm2_fig1.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;3: Figure 1 from Kerras et al.&nbsp;2024 in CVPR.
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<p>PAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="edm2-architecture" class="slide level2" style="font-size: 70%;">
+<h2>EDM2 Architecture</h2>
+
+<img data-src="figures/edm2_fig2.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;4: Figure 2 EDM2 Architecture combines a U-Net with self-attention layers (Kerras et al.&nbsp;2024 in CVPR).
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<p>PAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="edm2-results" class="slide level2" style="font-size: 70%;">
+<h2>EDM2 Results</h2>
+
+<img data-src="figures/edm2_table2.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
+Figure&nbsp;5: Table 2. Results on ImageNet-512. “EDM2-S” is the same as CONFIG G in Table 1 (Kerras et al.&nbsp;2024 in CVPR).
+</p><aside class="notes">
+<p>Speaker notes go here.</p>
+<p>PAPER: https://arxiv.org/pdf/2312.02696 POSTER: https://cvpr.thecvf.com/virtual/2024/poster/31235</p>
+<p>TODO</p>
+<ul>
+<li><p>OUR PAPER We train two different sized networks, EDM2-S and EDM2-XL, which allows us to apply autoguidance [14] to improve image quality.</p></li>
+<li><p>KERAS2024: In our tests, the smallest (XS) unconditional model was found to be sufficient for guiding even the largest (XXL) conditional model — using a larger unconditional model did not improve the results at all.</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -365,11 +435,11 @@ Figure&nbsp;2: Getting started documentation provide with a range of links to se
       }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2" class="slide level2">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2">
 <h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
 
 <img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
-Figure&nbsp;3: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;6: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
@@ -407,11 +477,11 @@ Figure&nbsp;3: Getting started documentation provide with a range of links to se
       }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3" class="slide level2">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2" class="slide level2">
 <h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
 
 <img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
-Figure&nbsp;4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;7: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
@@ -449,11 +519,11 @@ Figure&nbsp;4: Getting started documentation provide with a range of links to se
       }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-4" class="slide level2">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3" class="slide level2">
 <h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
 
 <img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section2"><p class="caption">
-Figure&nbsp;5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;8: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
