@@ -148,29 +148,103 @@ https://github.com/mxochicale/cv/tree/main/my-journey
      SECTION: Section 1
      ============================================================ -->
 # Prenatal ultrasound (US) Imaging {#secUS background-color="#0d1b2a"}
-**Add Subtitle**
 
 ::: {.notes}
-<!-- TODO: notes specific to Section title 1 -->
-Walk through the three layers: cloud VMs managed via Terraform/k8s,
-the campus network, and physical hardware (sensors, robots).
+
 :::
 
 
 
 <!-- *********************** NEW SLIDE *********************** -->
-## {{< fa brands github >}} Github: Getting started docs
+## Prenatal ultrasound (US) imaging {style="font-size: 70%;"}
 
-::: {#fig-template-section1}
+Prenatal US imaging is the primary modality for assessing fetal health and development.
 
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+:::: {.columns}
 
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+::: {.column width="50%"}
+
+![](figures/prenatal_us.svg){fig-align="center" width="100%"}
+
+:::
+
+::: {.column width="50%"}
+
+Challenges of US biometric measurements
+
+
+* Operator dependant,
+* Clinical system dependant,
+* Fetal position,
+* Similar morphological and echogenic characteristics in the US,
+* **Few public datasets are available**
+  * Data masking: Anonymisation or pseudonymisation?
+  * Personal Data Protection Policy 
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Wright-Gilbertson M. 2014 in PhD thesis; https://en.wikipedia.org/wiki/Gestational_age; National-Health-Service 2021. Screening for down’s syndrome,
+edwards’ syndrome and patau’s syndrome. https://www.nhs.uk/pregnancy/your- pregnancy- care
+
+
+:::
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Open Datasets for Ultrasound Fetal Imaging  {style="font-size: 100%;"}
+
+* FETAL PLANES DB (12,400 images)
+* US Fetus Phantom FPU23 dataset (15,728 images)
+* a fetal abdominal structures segmentation dataset (1,588 images)
+* an African low-resource dataset (451 images)
+
+
+
+::: {style="font-size: 55%;"}
+
 :::
 
 ::: {.notes}
-Speaker notes go here.
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
+**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+
 :::
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Research Questions 
+
+* How can diffusion-based generative models be developed to synthesize anatomically accurate and diverse fetal ultrasound images? 
+* What quantitative metrics and qualitative methods best captures the fidelity and diversity of synthetic fetal ultrasound images?
+
+::: {.notes}
+
+
+RQ1 (method)
+How can diffusion-based generative models, conditioned on anatomical priors 
+(e.g., segmentation masks or standard-plane labels), be developed to synthesize anatomically accurate 
+and diverse fetal ultrasound images of [specific structure/plane — e.g., the fetal brain, 
+four-chamber cardiac view], and how do they perform relative to GAN-based baselines 
+(DCGAN, CycleGAN, conditional GAN) in fidelity, diversity, and training stability?
+
+RQ2 (evaluation)
+What combination of quantitative metrics (e.g., FID, KID, LPIPS) and qualitative methods 
+(e.g., blinded sonographer/clinician realism ratings, t-SNE or UMAP distribution comparisons) 
+best captures the fidelity and diversity of synthetic fetal ultrasound images, 
+and to what extent do these metrics correlate with downstream clinical-task performance 
+(e.g., standard-plane classification or segmentation accuracy) 
+when synthetic images are used for data augmentation?
+
+:::
+
+
 
 
 <!-- ============================================================
@@ -883,52 +957,3 @@ Share the presentation, paper, arXiv preprint, and GitHub repository to open dis
 
 
 
-
-
-<!-- ============================================================
-     EXTRA SLIDES (appendix)
-     ============================================================ -->
-# Appendix {background-color="#111111"}
-
-Extra slides for Q&A
-
-
-<!-- *********************** NEW SLIDE *********************** -->
-## Title of the slide {style="font-size: 100%;"}
-
-* Bullet point 1
-* Bullet point 2
-* **Bullet point** 3
-  * Bullet point 3.1
-  * Bullet point 3.2
-
-
-::: {style="font-size: 55%;"}
-**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
-**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-:::
-
-::: {.notes}
-Notes go here
-:::
-
-
-
-<!-- *********************** NEW SLIDE *********************** -->
-## {{< fa brands github >}} Github: Getting started docs {style="font-size: 100%;"}
-
-::: {#fig-template-section1}
-
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
-
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
-:::
-
-::: {style="font-size: 55%;"}
-**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
-**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-:::
-
-::: {.notes}
-Speaker notes go here.
-:::
