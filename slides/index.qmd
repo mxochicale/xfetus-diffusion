@@ -86,7 +86,7 @@ Open-Source Medical Imaging in Unified-AI]{style="color:#e0e0e0; font-size:1.65e
 * [Image Quality Assessment](#secIQ) <add details>
 * [Unified AI](#secUAI) <add details>
 * [Results](#secR) <add details>
-* [Future Work](#secFW) <add details>
+* [Conclusions and Future Work](#secCFW) <add details>
 :::
 
 ::: {.column width="50%"}
@@ -809,52 +809,13 @@ Speaker notes go here.
 
 
 
-<!-- *********************** NEW SLIDE *********************** -->
-## {{< fa brands github >}} Github: Getting started docs {style="font-size: 100%;"}
-
-::: {#fig-template-section2}
-
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
-
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
-:::
-
-::: {.notes}
-Speaker notes go here.
-:::
-
-
-
-
-<!-- *********************** NEW SLIDE *********************** -->
-## Title of the slide {style="font-size: 100%;"}
-
-* Bullet point 1
-* Bullet point 2
-* **Bullet point** 3
-  * Bullet point 3.1
-  * Bullet point 3.2
-
-
-::: {style="font-size: 55%;"}
-**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
-**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-:::
-
-::: {.notes}
-Notes go here
-:::
-
-
-
 
 
 
 <!-- ============================================================
      SECTION: Section 6
      ============================================================ -->
-# Future Work {#secFW background-color="#0d1b2a"}
-**Add Subtitle**
+# Conclusions and future work {#secCFW background-color="#0d1b2a"}
 
 ::: {.notes}
 <!-- TODO: notes specific to Section 6 -->
@@ -862,45 +823,63 @@ Notes go here
 
 
 
-<!-- *********************** NEW SLIDE *********************** -->
-## {{< fa brands github >}} Github: Getting started docs {style="font-size: 100%;"}
-
-::: {#fig-template-section2}
-
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
-
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
-:::
-
-::: {style="font-size: 55%;"}
-**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
-**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-:::
-
-::: {.notes}
-Speaker notes go here.
-:::
-
 
 
 
 <!-- *********************** NEW SLIDE *********************** -->
-## Title of the slide {style="font-size: 100%;"}
+## Key Takeaways  {style="font-size: 85%;"}
 
-* Bullet point 1
-* Bullet point 2
-* **Bullet point** 3
-  * Bullet point 3.1
-  * Bullet point 3.2
+::: {style="font-size: 90%;"}
 
-
-::: {style="font-size: 55%;"}
-**Sciortino et al. 2017** in Computers in Biology and Medicine <https://doi.org/10.1016/j.compbiomed.2017.01.008>
-**He et al. 2021** in Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+::: {.incremental}
+- 💻 **Unified AI Platform**   
+Notebook namespaces with scratch volumes worked well for prototyping and debugging models with `CustomTrainerContainer()`.
+- 🩻 **EDM2 Diffusion Model**    
+Prototyped locally on a single GPU (NVIDIA RTX 2000, 8GB), then scaled via a distributed training pipeline on the Unified AI platform.
+The resulting model generates 512×512 fetal ultrasound images — surpassing prior 256×256 approaches — trained entirely on open datasets, 
+and improves downstream classification performance.
+- 📝 **Submitting to MIUA 2026**   
+Short paper (3 pages) submitted and accepted. Timeline. Call: early April 2026; Deadline: May 20, 2026; Notification & camera-ready: early June 2026; Conference: mid-July 2026.
+- 📦 **Open Release & Future Work**    
+All code and models released publicly. 
+Next steps: scaling toward foundation models for low-resource healthcare settings, and further comparison of diffusion architectures.
 :::
+
+
+:::
+
 ::: {.notes}
-Notes go here
+
 :::
+
+
+todo
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Future work  {style="font-size: 85%;"}
+
+::: {style="font-size: 90%;"}
+
+::: {.incremental}
+- 💻 **Up kubeflow 0.4.0 in the Unified AI Platform**   
+Move EDM2 training onto Kubeflow 0.4.0, with updated scratch-volume mounting, a step toward a reusable, distributed pipeline for training scalable foundation models in low-resource healthcare settings.
+
+- 📝 **Publish and Formalize the Work**   
+Release an arXiv preprint of the short paper with its additional material and pursue official publication in the MIUA 2026 conference proceedings, establishing a citable reference point for the model and open-source release.
+
+- 📦 **Grow the Collaboration Network for ARC**    
+Share the presentation, paper, arXiv preprint, and GitHub repository to open discussion with clinicians and researchers, inviting collaboration on further diffusion-architecture comparisons for medical images and extensions to other low-resource imaging domains.
+
+:::
+
+
+:::
+
+::: {.notes}
+
+:::
+
+
 
 
 
