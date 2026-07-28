@@ -114,34 +114,98 @@ https://github.com/mxochicale/cv/tree/main/my-journey
 
 # Prenatal ultrasound (US) Imaging
 
-**Add Subtitle**
-
 <div class="notes">
-
-<!-- TODO: notes specific to Section title 1 -->
-
-Walk through the three layers: cloud VMs managed via Terraform/k8s, the
-campus network, and physical hardware (sensors, robots).
 
 </div>
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-##  Github: Getting started docs
+## Prenatal ultrasound (US) imaging
 
-<div id="fig-template-section1">
+Prenatal US imaging is the primary modality for assessing fetal health
+and development.
 
-<img src="figures/00_template-vector-images/drawing-v00.svg"
+<div class="columns">
+
+<div class="column" width="50%">
+
+<img src="figures/prenatal_us.svg" style="width:100.0%"
 data-fig-align="center" />
 
-Figure 1: Getting started documentation provide with a range of links to
-setup, use, run and debug application including github workflow.
+</div>
+
+<div class="column" width="50%">
+
+Challenges of US biometric measurements
+
+- Operator dependant,
+- Clinical system dependant,
+- Fetal position,
+- Similar morphological and echogenic characteristics in the US,
+- **Few public datasets are available**
+  - Data masking: Anonymisation or pseudonymisation?
+  - Personal Data Protection Policy
+
+</div>
 
 </div>
 
 <div class="notes">
 
-Speaker notes go here.
+Wright-Gilbertson M. 2014 in PhD thesis;
+https://en.wikipedia.org/wiki/Gestational_age; National-Health-Service
+2021. Screening for down’s syndrome, edwards’ syndrome and patau’s
+syndrome. https://www.nhs.uk/pregnancy/your- pregnancy- care
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Open Datasets for Ultrasound Fetal Imaging
+
+- FETAL PLANES DB (12,400 images)
+- US Fetus Phantom FPU23 dataset (15,728 images)
+- a fetal abdominal structures segmentation dataset (1,588 images)
+- an African low-resource dataset (451 images)
+
+<div style="font-size: 55%;">
+
+</div>
+
+<div class="notes">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Research Questions
+
+- How can diffusion-based generative models be developed to synthesize
+  anatomically accurate and diverse fetal ultrasound images?
+- What quantitative metrics and qualitative methods best captures the
+  fidelity and diversity of synthetic fetal ultrasound images?
+
+<div class="notes">
+
+RQ1 (method) How can diffusion-based generative models, conditioned on
+anatomical priors (e.g., segmentation masks or standard-plane labels),
+be developed to synthesize anatomically accurate and diverse fetal
+ultrasound images of \[specific structure/plane — e.g., the fetal brain,
+four-chamber cardiac view\], and how do they perform relative to
+GAN-based baselines (DCGAN, CycleGAN, conditional GAN) in fidelity,
+diversity, and training stability?
+
+RQ2 (evaluation) What combination of quantitative metrics (e.g., FID,
+KID, LPIPS) and qualitative methods (e.g., blinded sonographer/clinician
+realism ratings, t-SNE or UMAP distribution comparisons) best captures
+the fidelity and diversity of synthetic fetal ultrasound images, and to
+what extent do these metrics correlate with downstream clinical-task
+performance (e.g., standard-plane classification or segmentation
+accuracy) when synthetic images are used for data augmentation?
 
 </div>
 
@@ -173,7 +237,7 @@ computer processor uses to test, score, or run a single trial
 
 <img src="figures/diffusion_models.svg" data-fig-align="center" />
 
-Figure 2: Overview of different types of generative models. (Source:
+Figure 1: Overview of different types of generative models. (Source:
 [Lil’Log](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/))
 
 </div>
@@ -195,7 +259,7 @@ https://toloka.ai/blog/unveiling-the-dynamics/
 
 <img src="figures/edm2_fig1.svg" data-fig-align="center" />
 
-Figure 3: Figure 1 from Kerras et al. 2024 in CVPR.
+Figure 2: Figure 1 from Kerras et al. 2024 in CVPR.
 
 </div>
 
@@ -216,7 +280,7 @@ https://cvpr.thecvf.com/virtual/2024/poster/31235
 
 <img src="figures/edm2_fig2.svg" data-fig-align="center" />
 
-Figure 4: Figure 2 EDM2 Architecture combines a U-Net with
+Figure 3: Figure 2 EDM2 Architecture combines a U-Net with
 self-attention layers (Kerras et al. 2024 in CVPR).
 
 </div>
@@ -238,7 +302,7 @@ https://cvpr.thecvf.com/virtual/2024/poster/31235
 
 <img src="figures/edm2_table2.svg" data-fig-align="center" />
 
-Figure 5: Table 2. Results on ImageNet-512. “EDM2-S” is the same as
+Figure 4: Table 2. Results on ImageNet-512. “EDM2-S” is the same as
 CONFIG G in Table 1 (Kerras et al. 2024 in CVPR).
 
 </div>
@@ -289,7 +353,7 @@ TODO
 
 <img src="figures/bautista2023_fig1.svg" data-fig-align="center" />
 
-Figure 6: Table 2. Results from Diffusion-Super-resolution-GAN (DSR-GAN)
+Figure 5: Table 2. Results from Diffusion-Super-resolution-GAN (DSR-GAN)
 and transformer- based-GAN (TB-GAN): (Bautista et al. 2023 in MIDL).
 
 </div>
@@ -320,7 +384,7 @@ Notes go here
 <img src="figures/ManneringXochicale_survey.svg"
 data-fig-align="center" />
 
-Figure 7: Survey
+Figure 6: Survey
 <https://xfetus.github.io/fetal-ultrasound-edm2-survey-2026>
 
 </div>
@@ -369,7 +433,7 @@ develop, train, evaluate, and deploy AI and machine learning models.
 
 <img src="figures/uai_platform.svg" data-fig-align="center" />
 
-Figure 8: Unified AI Platform
+Figure 7: Unified AI Platform
 
 </div>
 
@@ -392,7 +456,7 @@ An overview of Kubeflow Trainer:
 
 <img src="figures/uai_kubeflow.svg" data-fig-align="center" />
 
-Figure 9: User Personas in Kubeflow Trainer
+Figure 8: User Personas in Kubeflow Trainer
 
 </div>
 
@@ -415,7 +479,7 @@ An overview of Kubeflow Trainer:
 
 <img src="figures/uai_docker_images.svg" data-fig-align="center" />
 
-Figure 10: Worflow for GitHub Container Registry
+Figure 9: Worflow for GitHub Container Registry
 
 </div>
 
@@ -707,7 +771,7 @@ Published in **Medical Image Understanding and Analysis Conference
 
 <img src="figures/miua_fig1.svg" data-fig-align="center" />
 
-Figure 11: Representative fetal ultrasound images from real data, Tian
+Figure 10: Representative fetal ultrasound images from real data, Tian
 et al. \[22\], and our proposed high-resolution (512×512)
 diffusion-based synthesis approach.
 
@@ -734,7 +798,7 @@ Speaker notes go here.
 
 <img src="figures/miua_tables.svg" data-fig-align="center" />
 
-Figure 12: FID and Classifier accuracy comparison between Tian et
+Figure 11: FID and Classifier accuracy comparison between Tian et
 al. \[22\] and our generated images.
 
 </div>
@@ -767,7 +831,7 @@ Speaker notes go here.
 
 <img src="figures/miua_survey.svg" data-fig-align="center" />
 
-Figure 13: 100 images yielded a mean realism score of 2.67/5, with real
+Figure 12: 100 images yielded a mean realism score of 2.67/5, with real
 images rated higher than synthetic. Artefacts included smoothing,
 speckle irregularities, and anatomical inconsistencies.
 
@@ -864,65 +928,5 @@ todo
 </div>
 
 <div class="notes">
-
-</div>
-
-<!-- ============================================================
-     EXTRA SLIDES (appendix)
-     ============================================================ -->
-
-# Appendix
-
-Extra slides for Q&A
-
-<!-- *********************** NEW SLIDE *********************** -->
-
-## Title of the slide
-
-- Bullet point 1
-- Bullet point 2
-- **Bullet point** 3
-  - Bullet point 3.1
-  - Bullet point 3.2
-
-<div style="font-size: 55%;">
-
-**Sciortino et al. 2017** in Computers in Biology and Medicine
-<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
-Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-
-</div>
-
-<div class="notes">
-
-Notes go here
-
-</div>
-
-<!-- *********************** NEW SLIDE *********************** -->
-
-##  Github: Getting started docs
-
-<div id="fig-template-section1">
-
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-data-fig-align="center" />
-
-Figure 14: Getting started documentation provide with a range of links
-to setup, use, run and debug application including github workflow.
-
-</div>
-
-<div style="font-size: 55%;">
-
-**Sciortino et al. 2017** in Computers in Biology and Medicine
-<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
-Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-
-</div>
-
-<div class="notes">
-
-Speaker notes go here.
 
 </div>
