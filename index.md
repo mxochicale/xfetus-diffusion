@@ -53,6 +53,7 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 - [EDM2 diffusion model](#secDM) <add details>
 - [Image Quality Assessment](#secIQ) <add details>
 - [Unified AI](#secUAI) <add details>
+- [Results](#secR) <add details>
 - [Future Work](#secFW) <add details>
 
 </div>
@@ -151,7 +152,7 @@ Speaker notes go here.
 # EDM2 diffusion model
 
 Elucidating the Design Space of Diffusion Models, version 2\
-Harvey Mannering
+Harvey Mannering and Zhiwu Huang at University of Southampton
 
 <div class="notes">
 
@@ -680,17 +681,108 @@ Speaker notes go here. {.scrollable}
 </div>
 
 <!-- ============================================================
-     SECTION: Section 5
+     SECTION: Section 6
      ============================================================ -->
 
-# Future Work
+# Results
 
-**Add Subtitle**
+Yilin Zhang at University of Southampton\
+Ziao Liu at Tsinghua University\
+Jacqueline Matthew at King’s College London
+
+Published in **Medical Image Understanding and Analysis Conference
+(MIUA)**
 
 <div class="notes">
 
-<!-- TODO: notes specific to Section title 2 (was previously a duplicate
-     of Section title 1's notes — make sure this describes section 2) -->
+<!-- TODO: notes specific to Section 6  -->
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Diffusion-based synthesis (512×512)
+
+<div id="fig-template-section2">
+
+<img src="figures/miua_fig1.svg" data-fig-align="center" />
+
+Figure 11: Representative fetal ultrasound images from real data, Tian
+et al. \[22\], and our proposed high-resolution (512×512)
+diffusion-based synthesis approach.
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Mannering et al. 2026** in MIUA 2026 (TBC: arxiv and conference
+proceedings)
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## FID and Classifier accuracy comparison
+
+<div id="fig-template-section2">
+
+<img src="figures/miua_tables.svg" data-fig-align="center" />
+
+Figure 12: FID and Classifier accuracy comparison between Tian et
+al. \[22\] and our generated images.
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Mannering et al. 2026** in MIUA 2026 (TBC: arxiv and conference
+proceedings)
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Clinical evaluation by an experienced fetal ultrasound specialist (10+ years)
+
+- CLinitian evaluated 100 generated images, distinguishing real from
+  synthetic and rating quality on a 5-point Likert scale.
+- The mean score was 2.67, with real images scoring higher (3.12) than
+  synthetic ones (2.07).
+- Judgement relied on subtle artefacts including smoothing, speckle
+  patterns, and anatomical inconsistencies.
+
+<div id="fig-template-section2">
+
+<img src="figures/miua_survey.svg" data-fig-align="center" />
+
+Figure 13: 100 images yielded a mean realism score of 2.67/5, with real
+images rated higher than synthetic. Artefacts included smoothing,
+speckle irregularities, and anatomical inconsistencies.
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Mannering et al. 2026** in MIUA 2026 (TBC: arxiv and conference
+proceedings)
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
 
 </div>
 
@@ -703,8 +795,74 @@ Speaker notes go here. {.scrollable}
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 11: Getting started documentation provide with a range of links
+Figure 14: Getting started documentation provide with a range of links
 to setup, use, run and debug application including github workflow.
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Title of the slide
+
+- Bullet point 1
+- Bullet point 2
+- **Bullet point** 3
+  - Bullet point 3.1
+  - Bullet point 3.2
+
+<div style="font-size: 55%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+
+</div>
+
+<div class="notes">
+
+Notes go here
+
+</div>
+
+<!-- ============================================================
+     SECTION: Section 6
+     ============================================================ -->
+
+# Future Work
+
+**Add Subtitle**
+
+<div class="notes">
+
+<!-- TODO: notes specific to Section 6 -->
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+##  Github: Getting started docs
+
+<div id="fig-template-section2">
+
+<img src="figures/00_template-vector-images/drawing-v00.svg"
+data-fig-align="center" />
+
+Figure 15: Getting started documentation provide with a range of links
+to setup, use, run and debug application including github workflow.
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
 
 </div>
 
@@ -779,8 +937,16 @@ Notes go here
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 12: Getting started documentation provide with a range of links
+Figure 16: Getting started documentation provide with a range of links
 to setup, use, run and debug application including github workflow.
+
+</div>
+
+<div style="font-size: 55%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
+Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
 
 </div>
 

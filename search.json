@@ -4,7 +4,7 @@
     "href": "index.html#overview",
     "title": "",
     "section": "Overview",
-    "text": "Overview\n\n\n\n\nMy journey\nPrenatal ultrasound (US) Imaging \nEDM2 diffusion model \nImage Quality Assessment \nUnified AI \nFuture Work \n\n\n\n\n\n\nWhat We’ll Cover\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
+    "text": "Overview\n\n\n\n\nMy journey\nPrenatal ultrasound (US) Imaging \nEDM2 diffusion model \nImage Quality Assessment \nUnified AI \nResults \nFuture Work \n\n\n\n\n\n\nWhat We’ll Cover\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
   },
   {
     "objectID": "index.html#secMJ",
@@ -98,11 +98,32 @@
     "text": "Training EDM2 Model (kubeflow 0.3.0)\n\ntraining-edm2-model-ghcrtraining-edm2-model-scratch-volume\n\n\n\n\ntraining-edm2-model-ghcr.ipynb\n\n\n# https://github.com/xfetus/fetal-ultrasound-edm2/blob/main/unified-ai/training-edm2-model-ghcr.ipynb\n\n## Set how many PyTorch nodes you want to use for distributed training.\nNUM_NODES = 1\n\n# Set the resources for each PyTorch node.\nRESOURCES_PER_NODE = {\n    \"cpu\": \"4\",           # CPUs per node\n    \"memory\": \"64Gi\",     # Memory in GiB per node (tried 2Gi CrashLoopBackOff/OOMKilled), 64Gi works\n    \"nvidia.com/gpu\": 1,  # GPUs per node (the number will depend on the available resources)\n}\n\nGITHUB_CONTAINER_REGISTRY = \"ghcr.io/xfetus/fetal-ultrasound-edm2/fetal-ultrasound-edm2-distributed-learning:v0.1.1\"\n\ncommand = TrainerCommand(\n    command=[\n        \"torchrun\",\n        f\"--nnodes={NUM_NODES}\",\n        \"train_edm2.py\", #path of script in scratch \n        \"--outdir\", \"/scratch-volume/FETAL_PLANES_DB/OUTPUT_DIRECTORY\", # pragma: allowlist secret\n        \"--data\", \"/scratch-volume/FETAL_PLANES_DB\", # pragma: allowlist secret\n        \"--batch\", \"4\",\n        \"--preset\", \"edm2-img512-s\",\n        \"--batch-gpu\", \"4\",\n    ]\n)\n\n\n\njob_id = trainer.train(\n    runtime=torch_runtime,\n    trainer=CustomTrainerContainer(\n        image=GITHUB_CONTAINER_REGISTRY,\n        num_nodes=NUM_NODES,\n        resources_per_node=RESOURCES_PER_NODE,\n        env=ENV_VARS        \n    ),\n    options=[command, pod_template_overrides],\n)\n\n\n\n\n\n\ntraining-edm2-model-scratch-volume.ipynb\n\n\n# https://github.com/xfetus/fetal-ultrasound-edm2/blob/main/unified-ai/training-edm2-model-scratch-volume.ipynb\n\n\n## Set how many PyTorch nodes you want to use for distributed training.\nNUM_NODES = 1\n\n# Set the resources for each PyTorch node.\nRESOURCES_PER_NODE = {\n    \"cpu\": \"4\",           # CPUs per node\n    \"memory\": \"64Gi\",     # Memory in GiB per node (tried 2Gi CrashLoopBackOff/OOMKilled), 64Gi works\n    \"nvidia.com/gpu\": 1,  # GPUs per node (the number will depend on the available resources)\n}\n\nGITHUB_CONTAINER_REGISTRY = \"ghcr.io/xfetus/fetal-ultrasound-edm2/fetal-ultrasound-edm2-distributed-learning:v0.0.1\"\n# VERSION_ID=v0.0.1 #FROM docker.io/pytorch/pytorch:2.9.1-cuda12.8-cudnn9-devel / RUN mkdir -p /workspace && chmod -R 777 /workspace \n#                    RUN mkdir -p /.cache/pip /.local && chmod -R 777 /.cache/pip /.local\n\n\ncommand = TrainerCommand(\n    command=[\n        \"bash\", \"-c\",\n        (\n            # Create writable dirs\n            \"mkdir -p /scratch-volume/pip-packages \"\n            \"/scratch-volume/torch-inductor-cache \"\n            \"/scratch-volume/home && \"\n            # Install deps exclude torch/torchvision (already in base image)\n            # Use --upgrade to overwrite stale packages from previous runs\n            \"pip install \"\n            \"pandas \"\n            \"accelerate \"\n            \"basicsr \"\n            \"diffusers \"\n            \"einops \"\n            \"scikit-learn \"\n            \"--target=/scratch-volume/pip-packages \"\n            \"--upgrade \"\n            \"--no-cache-dir \"\n            \"--quiet && \"\n            # Set cache env vars inline to guarantee they're set before torchrun\n            \"export HOME=/scratch-volume/home && \"\n            \"export TORCHINDUCTOR_CACHE_DIR=/scratch-volume/torch-inductor-cache && \"\n            \"export PYTHONPATH=/scratch-volume/pip-packages:$PYTHONPATH && \"          \n            \"torchrun /scratch-volume/fetal-ultrasound-edm2/train_edm2.py \"\n            \"--outdir /scratch-volume/FETAL_PLANES_DB/OUTPUT_DIRECTORY \"\n            \"--data /scratch-volume/FETAL_PLANES_DB \"\n            \"--batch 4 \"\n            \"--preset edm2-img512-s \"\n            \"--batch-gpu 4\"\n        )\n    ]\n)\n\n\n\njob_id = trainer.train(\n    runtime=torch_runtime,\n    trainer=CustomTrainerContainer(\n        image=GITHUB_CONTAINER_REGISTRY,\n        num_nodes=NUM_NODES,\n        resources_per_node=RESOURCES_PER_NODE,\n        env=ENV_VARS        \n    ),\n    options=[command, pod_template_overrides],\n)\n\n\n\n\n\n\nJupyter Notebooks: https://github.com/xfetus/fetal-ultrasound-edm2/blob/main/unified-ai/training-edm2-model-ghcr.ipynb\nhttps://github.com/xfetus/fetal-ultrasound-edm2/blob/main/unified-ai/training-edm2-model-scratch-volume.ipynb\n\n\nSpeaker notes go here. {.scrollable}"
   },
   {
+    "objectID": "index.html#diffusion-based-synthesis-512512",
+    "href": "index.html#diffusion-based-synthesis-512512",
+    "title": "",
+    "section": "Diffusion-based synthesis (512×512)",
+    "text": "Diffusion-based synthesis (512×512)\n\n\nFigure 11: Representative fetal ultrasound images from real data, Tian et al. [22], and our proposed high-resolution (512×512) diffusion-based synthesis approach.\n\nMannering et al. 2026 in MIUA 2026 (TBC: arxiv and conference proceedings)\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#fid-and-classifier-accuracy-comparison",
+    "href": "index.html#fid-and-classifier-accuracy-comparison",
+    "title": "",
+    "section": "FID and Classifier accuracy comparison",
+    "text": "FID and Classifier accuracy comparison\n\n\nFigure 12: FID and Classifier accuracy comparison between Tian et al. [22] and our generated images.\n\nMannering et al. 2026 in MIUA 2026 (TBC: arxiv and conference proceedings)\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#clinical-evaluation-by-an-experienced-fetal-ultrasound-specialist-10-years",
+    "href": "index.html#clinical-evaluation-by-an-experienced-fetal-ultrasound-specialist-10-years",
+    "title": "",
+    "section": "Clinical evaluation by an experienced fetal ultrasound specialist (10+ years)",
+    "text": "Clinical evaluation by an experienced fetal ultrasound specialist (10+ years)\n\nCLinitian evaluated 100 generated images, distinguishing real from synthetic and rating quality on a 5-point Likert scale.\nThe mean score was 2.67, with real images scoring higher (3.12) than synthetic ones (2.07).\nJudgement relied on subtle artefacts including smoothing, speckle patterns, and anatomical inconsistencies.\n\n\n\nFigure 13: 100 images yielded a mean realism score of 2.67/5, with real images rated higher than synthetic. Artefacts included smoothing, speckle irregularities, and anatomical inconsistencies.\n\nMannering et al. 2026 in MIUA 2026 (TBC: arxiv and conference proceedings)\n\n\nSpeaker notes go here."
+  },
+  {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 11: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 14: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#title-of-the-slide",
@@ -112,6 +133,13 @@
     "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
   },
   {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "title": "",
+    "section": " Github: Getting started docs",
+    "text": "Github: Getting started docs\n\n\nFigure 15: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nSpeaker notes go here."
+  },
+  {
     "objectID": "index.html#title-of-the-slide-1",
     "href": "index.html#title-of-the-slide-1",
     "title": "",
@@ -119,10 +147,17 @@
     "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
   },
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "objectID": "index.html#title-of-the-slide-2",
+    "href": "index.html#title-of-the-slide-2",
+    "title": "",
+    "section": "Title of the slide",
+    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 12: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 16: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nSpeaker notes go here."
   }
 ]
