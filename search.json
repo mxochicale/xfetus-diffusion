@@ -145,5 +145,12 @@
     "title": "",
     "section": "Future work",
     "text": "Future work\n\n\n💻 Up kubeflow 0.4.0 in the Unified AI Platform\nMove EDM2 training onto Kubeflow 0.4.0, with updated scratch-volume mounting, a step toward a reusable, distributed pipeline for training scalable foundation models in low-resource healthcare settings.\n📝 Publish and Formalize the Work\nRelease an arXiv preprint of the short paper with its additional material and pursue official publication in the MIUA 2026 conference proceedings, establishing a citable reference point for the model and open-source release.\n📦 Grow the Collaboration Network for ARC\nShare the presentation, paper, arXiv preprint, and GitHub repository to open discussion with clinicians and researchers, inviting collaboration on further diffusion-architecture comparisons for medical images and extensions to other low-resource imaging domains."
+  },
+  {
+    "objectID": "index.html#thank-you",
+    "href": "index.html#thank-you",
+    "title": "",
+    "section": "Thank You",
+    "text": "Thank You\n\n\nCollaborators\n\nHarvey Mannering (PhD student) and Zhiwu Huang (Lecturer) at University of Southampton\nYilin Zhang (PhD student) at University of Southampton\n\nZiao Liu (PhD student) at Tsinghua University\n\nJacqueline Matthew ( Clinical Research Fellow) at King’s College London\n\n\nUnified AI Team\nMatthias Golomb, David Guzman, Dorothy Chung, Andrew Esterson and Sylvie Ramos\n\n\n\n\n💬 Get in Touch\n\n\nGitHub: github.com/mxochicale\nUCL ARC: ucl.ac.uk/arc\nUnified AI: Unified AI Platform for Research\n\n\n\n\n\nThank the room. Leave the slide up during questions — GitHub handle and repo URL are visible for anyone who wants to follow up."
   }
 ]

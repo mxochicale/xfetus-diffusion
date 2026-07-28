@@ -930,3 +930,51 @@ todo
 <div class="notes">
 
 </div>
+
+<!-- ============================================================ -->
+
+## Thank You
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+### Collaborators
+
+- Harvey Mannering (PhD student) and Zhiwu Huang (Lecturer) at
+  University of Southampton
+- Yilin Zhang (PhD student) at University of Southampton\
+- Ziao Liu (PhD student) at Tsinghua University\
+- Jacqueline Matthew ( Clinical Research Fellow) at King’s College
+  London
+
+</div>
+
+<div class="column" width="50%">
+
+### Unified AI Team
+
+Matthias Golomb, David Guzman, Dorothy Chung, Andrew Esterson and Sylvie
+Ramos
+
+------------------------------------------------------------------------
+
+> [!NOTE]
+>
+> ### :speech_balloon: Get in Touch
+>
+> **GitHub**: [github.com/mxochicale](https://github.com/mxochicale)\
+> **UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc)\
+> **Unified AI**: [Unified AI Platform for
+> Research](https://www.ucl.ac.uk/advanced-research-computing/platforms-services/unified-ai-platform-research/)
+
+</div>
+
+</div>
+
+<div class="notes">
+
+Thank the room. Leave the slide up during questions — GitHub handle and
+repo URL are visible for anyone who wants to follow up.
+
+</div>
