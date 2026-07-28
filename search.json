@@ -4,7 +4,7 @@
     "href": "index.html#overview",
     "title": "",
     "section": "Overview",
-    "text": "Overview\n\n\n\n\nMy journey\nPrenatal ultrasound (US) Imaging \nEDM2 diffusion model \nImage Quality Assessment \nUnified AI \nResults \nFuture Work \n\n\n\n\n\n\nWhat We’ll Cover\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
+    "text": "Overview\n\n\n\n\nMy journey\nPrenatal ultrasound (US) Imaging \nEDM2 diffusion model \nImage Quality Assessment \nUnified AI \nResults \nConclusions and Future Work \n\n\n\n\n\n\nWhat We’ll Cover\nKey Themes\n\n\n\n\n☁️ Cloud keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n🤖 Robotics keywords\n\n\nkeyword1, keyword2, keyword3\n\n\n\n\n\n\n👥 Collaborative keywords\n\n\nkeyword1, keyword2, keyword3"
   },
   {
     "objectID": "index.html#secMJ",
@@ -119,11 +119,18 @@
     "text": "Clinical evaluation by an experienced fetal ultrasound specialist (10+ years)\n\nCLinitian evaluated 100 generated images, distinguishing real from synthetic and rating quality on a 5-point Likert scale.\nThe mean score was 2.67, with real images scoring higher (3.12) than synthetic ones (2.07).\nJudgement relied on subtle artefacts including smoothing, speckle patterns, and anatomical inconsistencies.\n\n\n\nFigure 13: 100 images yielded a mean realism score of 2.67/5, with real images rated higher than synthetic. Artefacts included smoothing, speckle irregularities, and anatomical inconsistencies.\n\nMannering et al. 2026 in MIUA 2026 (TBC: arxiv and conference proceedings)\n\n\nSpeaker notes go here."
   },
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
     "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 14: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\n💻 Unified AI Platform\nNotebook namespaces with scratch volumes worked well for prototyping and debugging models with CustomTrainerContainer().\n🩻 EDM2 Diffusion Model\nPrototyped locally on a single GPU (NVIDIA RTX 2000, 8GB), then scaled via a distributed training pipeline on the Unified AI platform. The resulting model generates 512×512 fetal ultrasound images — surpassing prior 256×256 approaches — trained entirely on open datasets, and improves downstream classification performance.\n📝 Submitting to MIUA 2026\nShort paper (3 pages) submitted and accepted. Timeline. Call: early April 2026; Deadline: May 20, 2026; Notification & camera-ready: early June 2026; Conference: mid-July 2026.\n📦 Open Release & Future Work\nAll code and models released publicly. Next steps: scaling toward foundation models for low-resource healthcare settings, and further comparison of diffusion architectures.\n\n\n\n\n\ntodo"
+  },
+  {
+    "objectID": "index.html#future-work",
+    "href": "index.html#future-work",
+    "title": "",
+    "section": "Future work",
+    "text": "Future work\n\n\n💻 Up kubeflow 0.4.0 in the Unified AI Platform\nMove EDM2 training onto Kubeflow 0.4.0, with updated scratch-volume mounting, a step toward a reusable, distributed pipeline for training scalable foundation models in low-resource healthcare settings.\n📝 Publish and Formalize the Work\nRelease an arXiv preprint of the short paper with its additional material and pursue official publication in the MIUA 2026 conference proceedings, establishing a citable reference point for the model and open-source release.\n📦 Grow the Collaboration Network for ARC\nShare the presentation, paper, arXiv preprint, and GitHub repository to open discussion with clinicians and researchers, inviting collaboration on further diffusion-architecture comparisons for medical images and extensions to other low-resource imaging domains."
   },
   {
     "objectID": "index.html#title-of-the-slide",
@@ -133,31 +140,10 @@
     "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
   },
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
     "title": "",
     "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 15: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nSpeaker notes go here."
-  },
-  {
-    "objectID": "index.html#title-of-the-slide-1",
-    "href": "index.html#title-of-the-slide-1",
-    "title": "",
-    "section": "Title of the slide",
-    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
-  },
-  {
-    "objectID": "index.html#title-of-the-slide-2",
-    "href": "index.html#title-of-the-slide-2",
-    "title": "",
-    "section": "Title of the slide",
-    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes go here"
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3",
-    "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 16: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nSpeaker notes go here."
+    "text": "Github: Getting started docs\n\n\nFigure 14: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008 He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nSpeaker notes go here."
   }
 ]

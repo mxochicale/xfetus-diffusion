@@ -54,7 +54,7 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 - [Image Quality Assessment](#secIQ) <add details>
 - [Unified AI](#secUAI) <add details>
 - [Results](#secR) <add details>
-- [Future Work](#secFW) <add details>
+- [Conclusions and Future Work](#secCFW) <add details>
 
 </div>
 
@@ -786,57 +786,11 @@ Speaker notes go here.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
-
-##  Github: Getting started docs
-
-<div id="fig-template-section2">
-
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-data-fig-align="center" />
-
-Figure 14: Getting started documentation provide with a range of links
-to setup, use, run and debug application including github workflow.
-
-</div>
-
-<div class="notes">
-
-Speaker notes go here.
-
-</div>
-
-<!-- *********************** NEW SLIDE *********************** -->
-
-## Title of the slide
-
-- Bullet point 1
-- Bullet point 2
-- **Bullet point** 3
-  - Bullet point 3.1
-  - Bullet point 3.2
-
-<div style="font-size: 55%;">
-
-**Sciortino et al. 2017** in Computers in Biology and Medicine
-<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
-Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
-
-</div>
-
-<div class="notes">
-
-Notes go here
-
-</div>
-
 <!-- ============================================================
      SECTION: Section 6
      ============================================================ -->
 
-# Future Work
-
-**Add Subtitle**
+# Conclusions and future work
 
 <div class="notes">
 
@@ -846,53 +800,70 @@ Notes go here
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-##  Github: Getting started docs
+## Key Takeaways
 
-<div id="fig-template-section2">
+<div style="font-size: 90%;">
 
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-data-fig-align="center" />
+<div class="incremental">
 
-Figure 15: Getting started documentation provide with a range of links
-to setup, use, run and debug application including github workflow.
+- 💻 **Unified AI Platform**\
+  Notebook namespaces with scratch volumes worked well for prototyping
+  and debugging models with `CustomTrainerContainer()`.
+- 🩻 **EDM2 Diffusion Model**\
+  Prototyped locally on a single GPU (NVIDIA RTX 2000, 8GB), then scaled
+  via a distributed training pipeline on the Unified AI platform. The
+  resulting model generates 512×512 fetal ultrasound images — surpassing
+  prior 256×256 approaches — trained entirely on open datasets, and
+  improves downstream classification performance.
+- 📝 **Submitting to MIUA 2026**\
+  Short paper (3 pages) submitted and accepted. Timeline. Call: early
+  April 2026; Deadline: May 20, 2026; Notification & camera-ready: early
+  June 2026; Conference: mid-July 2026.
+- 📦 **Open Release & Future Work**\
+  All code and models released publicly. Next steps: scaling toward
+  foundation models for low-resource healthcare settings, and further
+  comparison of diffusion architectures.
 
 </div>
-
-<div style="font-size: 55%;">
-
-**Sciortino et al. 2017** in Computers in Biology and Medicine
-<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
-Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
 
 </div>
 
 <div class="notes">
 
-Speaker notes go here.
-
 </div>
+
+todo
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-## Title of the slide
+## Future work
 
-- Bullet point 1
-- Bullet point 2
-- **Bullet point** 3
-  - Bullet point 3.1
-  - Bullet point 3.2
+<div style="font-size: 90%;">
 
-<div style="font-size: 55%;">
+<div class="incremental">
 
-**Sciortino et al. 2017** in Computers in Biology and Medicine
-<https://doi.org/10.1016/j.compbiomed.2017.01.008> **He et al. 2021** in
-Front. Med. <https://doi.org/10.3389/fmed.2021.729978>
+- 💻 **Up kubeflow 0.4.0 in the Unified AI Platform**\
+  Move EDM2 training onto Kubeflow 0.4.0, with updated scratch-volume
+  mounting, a step toward a reusable, distributed pipeline for training
+  scalable foundation models in low-resource healthcare settings.
+
+- 📝 **Publish and Formalize the Work**\
+  Release an arXiv preprint of the short paper with its additional
+  material and pursue official publication in the MIUA 2026 conference
+  proceedings, establishing a citable reference point for the model and
+  open-source release.
+
+- 📦 **Grow the Collaboration Network for ARC**\
+  Share the presentation, paper, arXiv preprint, and GitHub repository
+  to open discussion with clinicians and researchers, inviting
+  collaboration on further diffusion-architecture comparisons for
+  medical images and extensions to other low-resource imaging domains.
+
+</div>
 
 </div>
 
 <div class="notes">
-
-Notes go here
 
 </div>
 
@@ -937,7 +908,7 @@ Notes go here
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 16: Getting started documentation provide with a range of links
+Figure 14: Getting started documentation provide with a range of links
 to setup, use, run and debug application including github workflow.
 
 </div>

@@ -255,7 +255,7 @@
 <li><a href="#/secIQ">Image Quality Assessment</a> <add details=""></add></li>
 <li><a href="#/secUAI">Unified AI</a> <add details=""></add></li>
 <li><a href="#/secR">Results</a> <add details=""></add></li>
-<li><a href="#/secFW">Future Work</a> <add details=""></add></li>
+<li><a href="#/secCFW">Conclusions and Future Work</a> <add details=""></add></li>
 </ul>
 </div><div class="column" style="width:50%;">
 
@@ -986,15 +986,15 @@ Figure&nbsp;13: 100 images yielded a mean realism score of 2.67/5, with real ima
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2" style="font-size: 100%;">
-<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
-
-<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section2"><p class="caption">
-Figure&nbsp;14: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
-</p><aside class="notes">
-<p>Speaker notes go here.</p>
+<!-- ============================================================
+     SECTION: Section 6
+     ============================================================ -->
+</section></section>
+<section>
+<section id="secCFW" class="title-slide slide level1 center" data-background-color="#0d1b2a">
+<h1>Conclusions and future work</h1>
+<aside class="notes">
+<!-- TODO: notes specific to Section 6 -->
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1006,6 +1006,71 @@ Figure&nbsp;14: Getting started documentation provide with a range of links to s
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="key-takeaways" class="slide level2" style="font-size: 85%;">
+<h2>Key Takeaways</h2>
+<div style="font-size: 90%;">
+<ul>
+<li class="fragment">💻 <strong>Unified AI Platform</strong><br>
+Notebook namespaces with scratch volumes worked well for prototyping and debugging models with <code>CustomTrainerContainer()</code>.</li>
+<li class="fragment">🩻 <strong>EDM2 Diffusion Model</strong><br>
+Prototyped locally on a single GPU (NVIDIA RTX 2000, 8GB), then scaled via a distributed training pipeline on the Unified AI platform. The resulting model generates 512×512 fetal ultrasound images — surpassing prior 256×256 approaches — trained entirely on open datasets, and improves downstream classification performance.</li>
+<li class="fragment">📝 <strong>Submitting to MIUA 2026</strong><br>
+Short paper (3 pages) submitted and accepted. Timeline. Call: early April 2026; Deadline: May 20, 2026; Notification &amp; camera-ready: early June 2026; Conference: mid-July 2026.</li>
+<li class="fragment">📦 <strong>Open Release &amp; Future Work</strong><br>
+All code and models released publicly. Next steps: scaling toward foundation models for low-resource healthcare settings, and further comparison of diffusion architectures.</li>
+</ul>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>todo</p>
+<!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="future-work" class="slide level2" style="font-size: 85%;">
+<h2>Future work</h2>
+<div style="font-size: 90%;">
+<ul>
+<li class="fragment"><p>💻 <strong>Up kubeflow 0.4.0 in the Unified AI Platform</strong><br>
+Move EDM2 training onto Kubeflow 0.4.0, with updated scratch-volume mounting, a step toward a reusable, distributed pipeline for training scalable foundation models in low-resource healthcare settings.</p></li>
+<li class="fragment"><p>📝 <strong>Publish and Formalize the Work</strong><br>
+Release an arXiv preprint of the short paper with its additional material and pursue official publication in the MIUA 2026 conference proceedings, establishing a citable reference point for the model and open-source release.</p></li>
+<li class="fragment"><p>📦 <strong>Grow the Collaboration Network for ARC</strong><br>
+Share the presentation, paper, arXiv preprint, and GitHub repository to open discussion with clinicians and researchers, inviting collaboration on further diffusion-architecture comparisons for medical images and extensions to other low-resource imaging domains.</p></li>
+</ul>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ============================================================
+     EXTRA SLIDES (appendix)
+     ============================================================ -->
+</section></section>
+<section>
+<section id="appendix" class="title-slide slide level1 center" data-background-color="#111111">
+<h1>Appendix</h1>
+<p>Extra slides for Q&amp;A</p>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
 <section id="title-of-the-slide" class="slide level2" style="font-size: 100%;">
@@ -1035,123 +1100,13 @@ Figure&nbsp;14: Getting started documentation provide with a range of links to s
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- ============================================================
-     SECTION: Section 6
-     ============================================================ -->
-</section></section>
-<section>
-<section id="secFW" class="title-slide slide level1 center" data-background-color="#0d1b2a">
-<h1>Future Work</h1>
-<p><strong>Add Subtitle</strong></p>
-<aside class="notes">
-<!-- TODO: notes specific to Section 6 -->
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-2" class="slide level2" style="font-size: 100%;">
-<h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
-
-<img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section2"><p class="caption">
-Figure&nbsp;15: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
-</p><div style="font-size: 55%;">
-<p><strong>Sciortino et al.&nbsp;2017</strong> in Computers in Biology and Medicine <a href="https://doi.org/10.1016/j.compbiomed.2017.01.008" class="uri">https://doi.org/10.1016/j.compbiomed.2017.01.008</a> <strong>He et al.&nbsp;2021</strong> in Front. Med. <a href="https://doi.org/10.3389/fmed.2021.729978" class="uri">https://doi.org/10.3389/fmed.2021.729978</a></p>
-</div>
-<aside class="notes">
-<p>Speaker notes go here.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
-</section>
-<section id="title-of-the-slide-1" class="slide level2" style="font-size: 100%;">
-<h2>Title of the slide</h2>
-<ul>
-<li>Bullet point 1</li>
-<li>Bullet point 2</li>
-<li><strong>Bullet point</strong> 3
-<ul>
-<li>Bullet point 3.1</li>
-<li>Bullet point 3.2</li>
-</ul></li>
-</ul>
-<div style="font-size: 55%;">
-<p><strong>Sciortino et al.&nbsp;2017</strong> in Computers in Biology and Medicine <a href="https://doi.org/10.1016/j.compbiomed.2017.01.008" class="uri">https://doi.org/10.1016/j.compbiomed.2017.01.008</a> <strong>He et al.&nbsp;2021</strong> in Front. Med. <a href="https://doi.org/10.3389/fmed.2021.729978" class="uri">https://doi.org/10.3389/fmed.2021.729978</a></p>
-</div>
-<aside class="notes">
-<p>Notes go here</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- ============================================================
-     EXTRA SLIDES (appendix)
-     ============================================================ -->
-</section></section>
-<section>
-<section id="appendix" class="title-slide slide level1 center" data-background-color="#111111">
-<h1>Appendix</h1>
-<p>Extra slides for Q&amp;A</p>
-<!-- *********************** NEW SLIDE *********************** -->
-</section>
-<section id="title-of-the-slide-2" class="slide level2" style="font-size: 100%;">
-<h2>Title of the slide</h2>
-<ul>
-<li>Bullet point 1</li>
-<li>Bullet point 2</li>
-<li><strong>Bullet point</strong> 3
-<ul>
-<li>Bullet point 3.1</li>
-<li>Bullet point 3.2</li>
-</ul></li>
-</ul>
-<div style="font-size: 55%;">
-<p><strong>Sciortino et al.&nbsp;2017</strong> in Computers in Biology and Medicine <a href="https://doi.org/10.1016/j.compbiomed.2017.01.008" class="uri">https://doi.org/10.1016/j.compbiomed.2017.01.008</a> <strong>He et al.&nbsp;2021</strong> in Front. Med. <a href="https://doi.org/10.3389/fmed.2021.729978" class="uri">https://doi.org/10.3389/fmed.2021.729978</a></p>
-</div>
-<aside class="notes">
-<p>Notes go here</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-3" class="slide level2" style="font-size: 100%;">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1" class="slide level2" style="font-size: 100%;">
 <h2><i class="fa-brands fa-github" aria-label="github"></i> Github: Getting started docs</h2>
 
 <img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template-section1"><p class="caption">
-Figure&nbsp;16: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;14: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><div style="font-size: 55%;">
 <p><strong>Sciortino et al.&nbsp;2017</strong> in Computers in Biology and Medicine <a href="https://doi.org/10.1016/j.compbiomed.2017.01.008" class="uri">https://doi.org/10.1016/j.compbiomed.2017.01.008</a> <strong>He et al.&nbsp;2021</strong> in Front. Med. <a href="https://doi.org/10.3389/fmed.2021.729978" class="uri">https://doi.org/10.3389/fmed.2021.729978</a></p>
 </div>
